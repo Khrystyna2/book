@@ -890,97 +890,6 @@ ol {
   font-size: 13px;
   line-height: 20px;
 }
-/* - */
-
-
-@media only screen and (max-width: 1600px) {
-    .search {
-        background-size: 100% 400px;
-        padding: 90px 0 72px;
-    }
-    .title {
-        font-size: 32px;
-        line-height: 36px;
-    }
-    .search-wrap>p {
-        font-size: 22px;
-        padding-top: 10px;
-    }
-    .search-group {
-        width: 90%;
-        height: 65px;
-        margin: 30px auto 0;
-    }
-    .search-group__btn {
-        width: 50px;
-        height: 50px;
-    }
-    .search-group__btn>img {
-        width: 24px;
-    }
-    .sayings__list {
-        font-size: 20px;
-        line-height: 26px;
-        padding: 36px 0 40px 0;
-    }
-    .sayings__list li>ol {
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .sayings__list>li {
-        padding: 0 60px 48px;
-    }
-    .sayings__list>li.black {
-        padding: 55px 60px 30px 60px;
-        margin-top: -45px;
-    }
-    .news-box__info h3 {
-        font-size: 19px;
-        line-height: 24px;
-        font-weight: 500;
-        margin-top: 10px;
-    }
-    .news-box__info span {
-        color: #C4C4C4;
-        font-size: 16px;
-    }
-    .news-box__img {
-        max-height: 110px;
-    }
-    .news-box__info {
-        padding: 20px 16px;
-    }
-    .news-box:hover .news-box__info {
-        padding: 20px;
-    }
-    .index-event {
-        padding: 20px 0 24px;
-    }
-    .index-event h3 {
-        font-size: 17px;
-        line-height: 24px;
-    }
-    .date {
-        font-size: 15px;
-        margin-top: 12px;
-    }
-}
-
-@media only screen and (max-width: 1999.8px) {
-    .header {
-        font-size: 16px;
-        line-height: 18px;
-    }
-
-.date {
-  font-size: 12px;
-  margin-top: 8px;
-}
-
-.date > img {
-  width: 16px;
-  margin-right: 8px;
-}
 
 }
 
@@ -993,92 +902,177 @@ ol {
     background: #fff;
     position: relative;
     cursor: pointer;
-}
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after{
-    display: block;
+  }
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after{
+      display: block;
+      position: absolute;
+      top: 50%; margin-top: -1px;
+      left: 50%; margin-left: -13px;
+      width: 26px;
+      height: 2px;
+      background-color: #222;
+  }
+  .menu-btn span::before,
+  .menu-btn span::after{
+      content: '';
+      display: block;
+      transition: 0.3s;
+  }
+  .menu-btn span::before{
+      transform: translateY(-5px);
+  }
+  .menu-btn span::after{
+      transform: translateY(5px);
+  }
+  .menu-btn_active span{
+      height: 0;
+  }
+  .menu-btn_active span:before {
+      transform: rotate(-42deg);
+  }
+  .menu-btn_active span:after {
+      transform: rotate(42deg);
+  }
+  /*button menu*/
+
+  .menu {
+    display: none;
     position: absolute;
-    top: 50%; margin-top: -1px;
-    left: 50%; margin-left: -13px;
-    width: 26px;
-    height: 2px;
-    background-color: #222;
-}
-.menu-btn span::before,
-.menu-btn span::after{
-    content: '';
+    right: 0;
+    top: 100%;
+    background-color: #24221B;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 54px);
+    overflow-y: scroll;
+  }
+
+  .menu > li {
+    margin-left: 0;
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .menu > li:nth-of-type(3), .menu > li:nth-of-type(4) {
+    margin: 0;
+  }
+
+  .menu-dropdown {
+    display: flex;
+    flex-flow: column;
+
+  }
+
+  .menu-dropdown > ul {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #search {
+    background-size: cover;
+    padding: 45px 0 40px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .search-wrap > p {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+
+  .sayings__list > li {
+    padding: 0 35px 25px;
     display: block;
-    transition: 0.3s;
-}
-.menu-btn span::before{
-    transform: translateY(-5px);
-}
-.menu-btn span::after{
-    transform: translateY(5px);
-}
-.menu-btn_active span{
-    height: 0;
-}
-.menu-btn_active span:before {
-    transform: rotate(-42deg);
-}
-.menu-btn_active span:after {
-    transform: rotate(42deg);
-}
-/*button menu*/
+  }
 
-.menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  background-color: #24221B;
-  text-align: center;
-  width: 100%;
-  height: calc(100vh - 54px);
-  overflow-y: scroll;
-}
+  .sayings__list > li > p {
+    display: inline;
+  }
 
-.menu > li {
-  margin-left: 0;
-  height: auto;
-  padding: 16px 0;
-}
+  .sayings__list li > ol {
+    width: 100%;
+    margin-left: 25px;
+  }
 
-.menu > li:nth-of-type(3), .menu > li:nth-of-type(4) {
-  margin: 0;
-}
+  .news-box {
+    margin-bottom: 15px;
+  }
 
-.menu-dropdown {
-  display: flex;
-  flex-flow: column;
+  .news-box__img {
+    max-height: 100px;
+  }
+
+  .news-box__info h3 {
+    height: 45px;
+  }
 
 }
 
-.menu-dropdown > ul {
-  position: static;
-  width: 100%;
-  margin-top: 10px;
+@media only screen and (max-width: 575.8px) {
+  #search {
+    padding: 20px 0 26px;
+  }
+  .search-group {
+    width: 100%;
+    height: 50px;
+    margin: 22px auto 0;
+    padding: 5px 6px;
+  }
+
+  .sayings__list > li {
+    padding: 0;
+    padding-bottom: 26px;
+    display: block;
+  }
+
+  .sayings__list li > ol {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .news-box__img {
+    height: 100%;
+  }
+
+  .news-box__info h3 {
+    font-size: 16px;
+    height: 100%;
+  }
+
+  .news-box {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 0 auto 15px;
+  }
+
+  .index-event {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .index-event h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-#search {
-  background-size: 100% 220px;
-  padding: 45px 0 40px;
-}
 
-.title {
-  font-size: 20px;
-  line-height: 24px;
+@media only screen and (max-width: 375px) {
+  .news-box {
+    width: 100%;
+  }
+  
+  .index-event {
+    width: 100%;
+  }
 }
-
-.search-wrap > p {
-  font-size: 16px;
-  padding-top: 6px;
-}
-
-}
-
 
 @media only screen and (min-width: 1601px) {
     .container {
