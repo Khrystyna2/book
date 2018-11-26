@@ -17,19 +17,25 @@ $(document).ready(function() {
     });
 
     //fixed section search
-    $(window).resize( function() {
+    function fixedSectionSearch () {
+      $(window).scroll(function(){
+        let heightHeader = $('.header').height();
+        let heightSectionSearch = $('#search').outerHeight(true);
+        if($(window).scrollTop() >= heightHeader) {
+          $('#search').addClass('sticky');
+          $('#sayings').css('padding-top', heightSectionSearch);
+        } else {
+          $('#search').removeClass('sticky');
+          $('#sayings').css('padding-top', "0");
+        }
+      });
+    }
+
+    fixedSectionSearch();
+    
+    $(window).resize(function () {
       if ($(window).width() > 767) {
-        $(window).scroll(function(){
-          let heightHeader = $('.header').height();
-          let heightSectionSearch = $('#search').outerHeight(true);
-          if($(window).scrollTop() >= heightHeader) {
-            $('#search').addClass('sticky');
-            $('#sayings').css('padding-top', heightSectionSearch);
-          } else {
-            $('#search').removeClass('sticky');
-            $('#sayings').css('padding-top', "0");
-          }
-        });
+        fixedSectionSearch();
       }
       else if ($(window).width() <= 767) {
         $(window).scroll(function(){
@@ -39,7 +45,7 @@ $(document).ready(function() {
       }
     });
 
-
+    
     $('.menu-btn').on('click', function() {
       $(this).toggleClass('menu-btn_active');
       $('.menu').slideToggle();
