@@ -655,7 +655,6 @@ ol {
     justify-content: center;
     transition: .3s;
 }
-
 .new-pagination ul li.active a,
 .new-pagination ul li a:hover {
     color: #fff;
@@ -876,7 +875,6 @@ ol {
     }
 }
 
-
 @media only screen and (max-width: 767.8px) {
   /*button menu*/
   .menu-btn{
@@ -1021,6 +1019,12 @@ ol {
     margin-left: 10px;
   }
 
+  .sayings__list > li.black {
+    padding: 35px 20px 15px 20px;
+    margin-top: -45px;
+    margin-bottom: 15px;
+  }
+
   .news-box__img {
     height: 100%;
   }
@@ -1047,7 +1051,6 @@ ol {
     line-height: 20px;
   }
 }
-
 
 @media only screen and (max-width: 375px) {
   .news-box {
