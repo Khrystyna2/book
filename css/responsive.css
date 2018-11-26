@@ -1,0 +1,88 @@
+@media only screen and (max-width:1700px) {
+    .textnblock .ndate {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .textnblock .ntitle {
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .textnblock .ndescr {
+        line-height: normal;
+        font-size: 16px;
+    }
+    .picnblock {
+        height: 180px;
+    }
+    .textnblock {
+        padding: 10px 15px 10px 10px;
+    }
+    .newblock {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:991.8px) {
+    .textnblock .ntitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .textnblock {
+        padding: 20px 20px 20px 20px;
+    }
+    .new-section {
+        padding-top: 30px;
+    }
+    .new-section h1 {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width:767.8px) {
+    .textnblock {
+        padding: 10px 10px 10px 10px;
+    }
+    .picnblock {
+        height: 150px;
+    }
+    .textnblock .ntitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .textnblock .ndescr {
+        font-size: 14px;
+    }
+    .textnblock .ntitle {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:575.8px) {
+    .newblock > .row > .col-md-4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .newblock > .row > .col-md-8 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .picnblock {
+        height: auto;
+        max-height: 50vh;
+    }
+    .textnblock .ntitle {
+        font-size: 18px;
+    }
+    .textnblock .ndescr {
+        font-size: 16px;
+    }
+    .textnblock {
+        padding: 20px 20px 20px 20px;
+    }
+    .new-pagination {
+        margin: 20px 0 30px 0;
+    }
+}
