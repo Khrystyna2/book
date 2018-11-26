@@ -1,3 +1,78 @@
+/* NEW OPEN */
+
+.brcrumb {
+    margin: 23px 0 17px 0;
+}
+
+.brcrumb ul li {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.brcrumb ul li a {
+    color: #24221B;
+}
+
+.brcrumb ul li a:hover {
+    text-decoration: underline;
+}
+
+.brcrumb ul li:after {
+    content: "/";
+    display: inline-block;
+    margin: 0 5px 0 10px;
+}
+
+.brcrumb ul li:last-child:after {
+    display: none;
+}
+
+.posttop-section {
+    max-width: 725px;
+    margin: 0 auto 47px;
+}
+
+.post-pic {
+    margin-bottom: 29px;
+    width: 100%;
+}
+
+.post-title {
+    font-weight: 500;
+    line-height: 56px;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #24221B;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 37px;
+}
+
+.postdate {
+    line-height: 30px;
+    font-size: 20px;
+    color: #C4C4C4;
+    vertical-align: middle;
+}
+.postdate img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.posttext-section p {
+    line-height: 33px;
+    font-size: 20px;
+    color: #484742;
+    margin-bottom: 20px;
+}
+.posttext-section {
+    margin-bottom: 100px;
+}
+
+
+
 @media only screen and (max-width:1700px) {
     .textnblock .ndate {
         font-size: 14px;
@@ -21,6 +96,18 @@
     .newblock {
         margin-bottom: 20px;
     }
+    .posttext-section p {
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .post-title {
+        line-height: 40px;
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    
 }
 
 @media only screen and (max-width:991.8px) {
@@ -39,8 +126,32 @@
         padding-bottom: 0;
         font-size: 32px;
     }
+    .posttop-section {
+        margin: 0 auto 20px;
+    }
+    .posttext-section {
+        margin-bottom: 40px;
+    }
+    .brcrumb ul li {
+        font-size: 16px;
+    }
 }
+
 @media only screen and (max-width:767.8px) {
+    .brcrumb ul li {
+        font-size: 14px;
+    }
+    .postdate {
+        font-size: 14px;
+    }
+    .posttext-section p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .post-title {
+        line-height: 28px;
+        font-size: 20px;
+    }
     .textnblock {
         padding: 10px 10px 10px 10px;
     }
@@ -58,13 +169,14 @@
         font-size: 16px;
     }
 }
+
 @media only screen and (max-width:575.8px) {
-    .newblock > .row > .col-md-4 {
+    .newblock>.row>.col-md-4 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .newblock > .row > .col-md-8 {
+    .newblock>.row>.col-md-8 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
