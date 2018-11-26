@@ -807,7 +807,7 @@ ol {
 }
 
 #search {
-  background-size: 100% 220px;
+  background-size: cover;
   padding: 45px 0 40px;
 }
 
@@ -819,6 +819,20 @@ ol {
 .search-wrap > p {
   font-size: 16px;
   padding-top: 6px;
+}
+
+.sayings__list > li {
+  padding: 0 35px 25px;
+  display: block;
+}
+
+.sayings__list > li > p {
+  display: inline;
+}
+
+.sayings__list li > ol {
+  width: 100%;
+  margin-left: 25px;
 }
 
 }
