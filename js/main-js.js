@@ -21,17 +21,22 @@ $(document).ready(function() {
     // $('<div class="clone-search"></div>').insertBefore('.search').css('height', heightSectionSearch).hide();
     $(window).scroll(function(){
       let heightHeader = $('.header').height();
-      let heightSectionSearch = $('.search').outerHeight(true);
+      let heightSectionSearch = $('#search').outerHeight(true);
       if($(window).scrollTop() >= heightHeader) {
-        $('.search').addClass('sticky');
+        $('#search').addClass('sticky');
         // $('.clone-search').show();
         $('#sayings').css('padding-top', heightSectionSearch);
       } else {
-        $('.search').removeClass('sticky');
+        $('#search').removeClass('sticky');
         // $('.clone-search').hide();
         $('#sayings').css('padding-top', "0");
 
       }
+    });
+
+    $('.menu-btn').on('click', function() {
+      $(this).toggleClass('menu-btn_active');
+      $('.menu').slideToggle();
     });
   
 });
