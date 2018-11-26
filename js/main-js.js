@@ -17,37 +17,27 @@ $(document).ready(function() {
     });
 
     //fixed section search
-    // let heightSectionSearch = $('.search').outerHeight(true);
-    // $('<div class="clone-search"></div>').insertBefore('.search').css('height', heightSectionSearch).hide();
-    $(window).scroll(function(){
-      let heightHeader = $('.header').height();
-      let heightSectionSearch = $('#search').outerHeight(true);
-      if($(window).scrollTop() >= heightHeader) {
-        $('#search').addClass('sticky');
-        // $('.clone-search').show();
-        $('#sayings').css('padding-top', heightSectionSearch);
-      } else {
-        $('#search').removeClass('sticky');
-        // $('.clone-search').hide();
-        $('#sayings').css('padding-top', "0");
-
+    $(window).resize( function() {
+      if ($(window).width() > 767) {
+        $(window).scroll(function(){
+          let heightHeader = $('.header').height();
+          let heightSectionSearch = $('#search').outerHeight(true);
+          if($(window).scrollTop() >= heightHeader) {
+            $('#search').addClass('sticky');
+            $('#sayings').css('padding-top', heightSectionSearch);
+          } else {
+            $('#search').removeClass('sticky');
+            $('#sayings').css('padding-top', "0");
+          }
+        });
+      }
+      else if ($(window).width() <= 767) {
+        $(window).scroll(function(){
+            $('#search').removeClass('sticky');
+            $('#sayings').css('padding-top', "0");
+        });
       }
     });
-
-      $(window).scroll(function(){
-        let heightHeader = $('.header').height();
-        let heightSectionSearch = $('#search').outerHeight(true);
-        if($(window).scrollTop() >= heightHeader) {
-          $('#search').addClass('sticky');
-          // $('.clone-search').show();
-          $('#sayings').css('padding-top', heightSectionSearch);
-        } else {
-          $('#search').removeClass('sticky');
-          // $('.clone-search').hide();
-          $('#sayings').css('padding-top', "0");
-  
-        }
-      });
 
 
     $('.menu-btn').on('click', function() {
