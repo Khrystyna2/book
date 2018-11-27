@@ -734,7 +734,7 @@ ol {
     max-width: 70%;
 }
 
-/*section events*/
+/*page events*/
 
 .events {
     padding: 58px 0;
@@ -821,7 +821,7 @@ ol {
     background-color: #F7F7F7;
 }
 
- /* section events-open */
+ /* page events-open */
  .events-open p {
     font-size: 20px;
     line-height: 33px;
@@ -853,6 +853,169 @@ ol {
     width: 100%;
     margin-top: 90px;
     margin-bottom: 106px;
+}
+
+/* page articles-open */
+.articles-open {
+    padding-bottom: 105px;
+    padding-top: 50px;
+}
+
+.articles-open__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.articles-open__info {
+    width: 50%;
+    margin: 0 auto 90px;
+}
+
+.articles-open__info > img {
+    width: 348px;
+    margin: 0 auto 45px;
+    display: block;
+}
+
+.articles-open__info-list {
+    width: 100%;
+    border-top: 1px solid #E5E5E5;
+    padding-top: 6px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.articles-open__info-list > li {
+    padding-bottom: 6px;
+}
+
+.articles-open__info-list > li > span {
+    color: #C4C4C4;
+    padding-right: 6px;
+}
+
+.articles-open p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.articles-open p:last-of-type {
+    padding-bottom: 0;
+}
+
+/* page sitemap */
+.sitemap {
+    padding-top: 58px;
+    padding-bottom: 106px;
+}
+
+.sitemap__title {
+    position: relative;
+    line-height: 56px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #24221B;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.sitemap__title::after {
+    content: "";
+    height: 5px;
+    width: 59px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-color: #C1A69B;
+    bottom: 0;
+}
+
+.sitemap__nav > li {
+    display: block;
+    margin-bottom: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #24221B;
+}
+
+.sitemap__nav > li > ul {
+    margin-left: 34px;
+    margin-top: 26px;
+}
+
+.sitemap__nav > li > ul > li {
+    font-size: 20px;
+    color: #484742;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sitemap__nav > li > ul > li::before {
+    content: '';
+    background: url(../icons/right-arrow.svg) no-repeat center center;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -25px;
+}
+
+.sitemap__nav a:hover {
+    text-decoration: underline;
+}
+
+/* page contact */
+
+.contact {
+    padding-top: 58px;
+}
+.contact__title {
+    position: relative;
+    line-height: 56px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #24221B;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.contact__title::after {
+    content: "";
+    height: 5px;
+    width: 59px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-color: #C1A69B;
+    bottom: 0;
+}
+
+.contact > ul {
+    margin-top: 105px;
+    font-size: 22px;
+    line-height: 31px;
+    font-weight: 500;
+    color: #24221B;
+}
+
+.contact > ul li {
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.contact > ul li > span {
+    width: 59px;
+    height: 59px;
+    background-color: #C1A69B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 67px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -980,7 +1143,7 @@ ol {
 
     .events-open p {
         font-size: 16px;
-        line-height: 28px;
+        line-height: 26px;
     }
     
     .events-open__title {
@@ -1004,6 +1167,38 @@ ol {
     .events-open__image {
         margin-top: 60px;
         margin-bottom: 86px;
+    }
+
+    .articles-open {
+        padding-bottom: 70px;
+        padding-top: 20px;
+    }
+    
+    .articles-open__title {
+        font-size: 30px;
+        line-height: 46px;
+        margin-bottom: 35px;
+    }
+    
+    .articles-open__info {
+        width: 60%;
+        margin: 0 auto 40px;
+    }
+    
+    .articles-open__info > img {
+        width: 300px;
+        margin: 0 auto 25px;
+    }
+    
+    .articles-open__info-list {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .articles-open p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 20px;
     }
 }
 
@@ -1158,6 +1353,88 @@ ol {
         margin-bottom: 56px;
     }
 
+    .articles-open {
+        padding-bottom: 50px;
+        padding-top: 10px;
+    }
+    
+    .articles-open__title {
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    
+    .articles-open__info {
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+    
+    .articles-open__info > img {
+        width: 250px;
+        margin: 0 auto 15px;
+    }
+    
+    .articles-open__info-list {
+        font-size: 14px;
+    }
+    
+    .articles-open p {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 16px;
+    }
+
+    .sitemap {
+        padding-top: 32px;
+        padding-bottom: 60px;
+    }
+
+    .sitemap__title {
+        line-height: 48px;
+        font-size: 32px;
+        margin-bottom: 34px;
+    }
+
+    .sitemap__nav > li {
+        margin-bottom: 32px;
+        font-size: 20px;
+    }
+
+    .sitemap__nav > li > ul > li {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .contact {
+        padding-top: 38px;
+    }
+
+    .contact__title {
+        line-height: 48px;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .contact > ul {
+        margin-top: 55px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .contact > ul li {
+        margin-bottom: 30px;
+    }
+    
+    .contact > ul li > span {
+        width: 49px;
+        height: 49px;
+        margin-right: 27px;
+    }
+
+    .contact > ul li > span > img {
+        width: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 767.8px) {
@@ -1279,6 +1556,17 @@ ol {
         margin-bottom: 18px;
         margin-top: 20px;
     }
+
+    .articles-open__title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 18px;
+    }
+
+    .articles-open__info {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
 }
 
 @media only screen and (max-width: 575.8px) {
@@ -1330,6 +1618,26 @@ ol {
     .events-open__image-center {
         width: 100%;
     }
+
+    .contact > ul {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .contact > ul li > span {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact > ul li > span > img {
+        width: 26px;
+    }
+
+    .contact > ul li > p {
+        width: 78%;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
