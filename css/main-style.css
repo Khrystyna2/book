@@ -734,6 +734,209 @@ ol {
     max-width: 70%;
 }
 
+/* NEW OPEN */
+
+.brcrumb {
+    margin: 23px 0 17px 0;
+}
+
+.brcrumb ul li {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.brcrumb ul li a {
+    color: #24221B;
+}
+
+.brcrumb ul li a:hover {
+    text-decoration: underline;
+}
+
+.brcrumb ul li:after {
+    content: "/";
+    display: inline-block;
+    margin: 0 5px 0 10px;
+}
+
+.brcrumb ul li:last-child:after {
+    display: none;
+}
+
+.posttop-section {
+    max-width: 725px;
+    margin: 0 auto 47px;
+}
+
+.post-pic {
+    margin-bottom: 29px;
+    width: 100%;
+}
+
+.post-title {
+    font-weight: 500;
+    line-height: 56px;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #24221B;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 37px;
+}
+
+.postdate {
+    line-height: 30px;
+    font-size: 20px;
+    color: #C4C4C4;
+    vertical-align: middle;
+}
+
+.postdate img {
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.posttext-section p {
+    line-height: 33px;
+    font-size: 20px;
+    color: #484742;
+    margin-bottom: 20px;
+}
+
+.posttext-section {
+    margin-bottom: 100px;
+}
+
+/* ARTICLES */
+
+.articles-section h1 {
+    position: relative;
+    line-height: 56px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #24221B;
+    margin-bottom: 57px;
+    padding-bottom: 10px;
+}
+
+.articles-section h1:before {
+    content: "";
+    height: 5px;
+    width: 59px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-color: #C1A69B;
+    bottom: 0;
+}
+
+.articles-section {
+    margin-top: 58px;
+}
+
+.article-search {
+    position: relative;
+}
+
+.article-search input[type="text"] {
+    background: #FFFFFF;
+    border: 1px solid #C1A69B;
+    box-sizing: border-box;
+    border-radius: 40px;
+    width: 100%;
+    height: 55px;
+    padding-left: 70px;
+    padding-right: 10px;
+}
+
+.article-search input[type="submit"] {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-image: url(../image/search.svg);
+    background-size: cover;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.articles {
+    margin-top: 75px;
+}
+
+.artleft-text p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 31px;
+    font-size: 22px;
+    color: #24221B;
+}
+
+.artright-text span {
+    display: inline-flex;
+}
+
+.artright-text span:first-child {
+    line-height: 28px;
+    font-size: 20px;
+    color: #C4C4C4;
+    width: 11%;
+    display: inline-flex;
+}
+
+.artright-text span:nth-child(2) {
+    line-height: 28px;
+    font-size: 20px;
+    color: #484742;
+    width: 59%;
+    display: inline-flex;
+}
+
+.artright-text span:nth-child(3) {
+    line-height: 28px;
+    font-size: 20px;
+    color: #C4C4C4;
+    width: 28%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.artright-text span:nth-child(3) text {
+    line-height: 28px;
+    font-size: 20px;
+    color: #484742;
+    padding-left: 4px;
+}
+
+.article-block {
+    padding: 34px 0;
+        transition: .5s;
+    width: calc(100%);
+}
+
+.article-block:hover {
+    padding: 34px 34px;
+    background: #24221B;
+    box-shadow: -3px 6px 15px rgba(0, 0, 0, 0.25);
+    transition: .5s;
+    width: calc(100% + 68px);
+    margin-left: -34px;
+}
+
+.article-block:hover .artleft-text p {
+    color: #fff;
+}
+
+.article-block:hover .artright-text span:nth-child(2),
+.article-block:hover .artright-text span:nth-child(3) text {
+    color: #fff;
+}
+
 /*page events*/
 
 .events {
@@ -1018,6 +1221,60 @@ ol {
     margin-right: 67px;
 }
 
+@media only screen and (max-width:1700px) {
+    
+    .article-block .col-md-5.offset-1 {
+        margin-left: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .articles {
+        margin-top: 0;
+    }
+    .artleft-text p {
+        font-size: 18px;
+    }
+    .artright-text span:first-child, .artright-text span:nth-child(2), .artright-text span:nth-child(3),
+    .artright-text span:nth-child(3) text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .textnblock .ndate {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .textnblock .ntitle {
+        line-height: normal;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .textnblock .ndescr {
+        line-height: normal;
+        font-size: 16px;
+    }
+    .picnblock {
+        height: 180px;
+    }
+    .textnblock {
+        padding: 10px 15px 10px 10px;
+    }
+    .newblock {
+        margin-bottom: 20px;
+    }
+    .posttext-section p {
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .post-title {
+        line-height: 40px;
+        font-size: 32px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
 @media only screen and (max-width: 1600px) {
     #search {
         background-size: 100% 400px;
@@ -1116,6 +1373,15 @@ ol {
         right: 5%;
         font-size: 14px;
         line-height: 20px;
+    }
+
+    .article-block {
+        padding: 15px 0;
+    }
+    .article-block:hover {
+        padding: 15px 15px;
+        width: calc(100% + 30px);
+        margin-left: -15px;
     }
 
     .events h1 {
@@ -1306,6 +1572,41 @@ ol {
         line-height: 20px;
     }
 
+    .artleft-text p {
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+    .article-block .col-md-6, .article-block .col-md-5.offset-1 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .textnblock .ntitle {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .textnblock {
+        padding: 20px 20px 20px 20px;
+    }
+    .new-section {
+        padding-top: 30px;
+    }
+    .new-section h1 {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+        font-size: 32px;
+    }
+    .posttop-section {
+        margin: 0 auto 20px;
+    }
+    .posttext-section {
+        margin-bottom: 40px;
+    }
+    .brcrumb ul li {
+        font-size: 16px;
+    }
+
     #calendar {
         display: none;
     }
@@ -1438,6 +1739,12 @@ ol {
 }
 
 @media only screen and (max-width: 767.8px) {
+
+    .header {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
     /*button menu*/
     .menu-btn {
         height: 40px;
@@ -1549,6 +1856,43 @@ ol {
         height: 45px;
     }
 
+    .articles-section {
+        margin-top: 30px;
+    }
+    .articles-section h1 {
+        margin-bottom: 30px;
+    }
+    .brcrumb ul li {
+        font-size: 14px;
+    }
+    .postdate {
+        font-size: 14px;
+    }
+    .posttext-section p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .post-title {
+        line-height: 28px;
+        font-size: 20px;
+    }
+    .textnblock {
+        padding: 10px 10px 10px 10px;
+    }
+    .picnblock {
+        height: 150px;
+    }
+    .textnblock .ntitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .textnblock .ndescr {
+        font-size: 14px;
+    }
+    .textnblock .ntitle {
+        font-size: 16px;
+    }
+
     .events-open__title {
         font-size: 20px;
         line-height: 26px;
@@ -1613,6 +1957,46 @@ ol {
     .index-event h3 {
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .artright-text span:first-child {
+        width: 17%;
+    }
+    .artright-text span:nth-child(2) {
+        width: 80%;
+    }
+    .artright-text span:nth-child(3) {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .artright-text span:nth-child(3) text {
+        padding-left: 6px;
+    }
+    .newblock>.row>.col-md-4 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .newblock>.row>.col-md-8 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .picnblock {
+        height: auto;
+        max-height: 50vh;
+    }
+    .textnblock .ntitle {
+        font-size: 18px;
+    }
+    .textnblock .ndescr {
+        font-size: 16px;
+    }
+    .textnblock {
+        padding: 20px 20px 20px 20px;
+    }
+    .new-pagination {
+        margin: 20px 0 30px 0;
     }
 
     .events-open__image-center {
